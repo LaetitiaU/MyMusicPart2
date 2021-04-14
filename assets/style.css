@@ -84,6 +84,10 @@ img {
     justify-content: center;
 }
 
+.maClass:first-child {
+    font-weight: bold;
+}
+
 .chansonsrecentes {
     width: 160px;
     height: 250px;
@@ -122,6 +126,20 @@ img {
     font-size: 17px;
     padding:0;
     background-color: #C4C4C4;
+}
+
+.boutonrecherche {
+    text-align: center;
+    margin-left: 90px;
+}
+
+#go {
+    width:100px;
+    height:30px;
+    background-color: white;
+    border:1px solid black;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /*----------APPLICATIONS DE MUSIQUES----------*/
