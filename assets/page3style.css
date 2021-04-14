@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+.titre {
+    color: black;
+    font-size: 40px;
+    margin: 2px;
+    padding: 2px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/*----------------------------NAV BAR-------------------------------*/
+
+nav {
+    height: 12vh;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.nav-links {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 1.5px;
+    word-spacing: 8px;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+li:hover {
+    border-bottom: 1 px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+/*------------------BIOGRAPHIE---------------*/
+
+.titres p {
+    letter-spacing: 3px;
+    font-size: 19px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.biographiedumoment {
+    width: 500px;
+    height: 620px;
+    color: black;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.biographiedumoment img {
+    margin: 0px;
+    width: 498px;
+    height: 250px;
+    border: 1px solid black;
+    /* filter: gray; /* IE6-9 */
+    /* -webkit-filter: grayscale(1); Google Chrome, Safari 6+ & Opera 15+ */
+    /* filter: grayscale(1); Microsoft Edge and Firefox 35+ */
+}
+
+/* 
+.biographiedumoment img:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+  } */
+
+.titrebiographie {
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.biographie {
+    text-align: justify;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.deuxiemepartie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/*-------------------------CONCERTS---------------------------*/
+
+.concerts {
+    text-align: center;
+    font-size: 15px;
+    line-height: 8px;
+    width: 500px;
+    height: 615px;
+    color: black;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.datesconcerts {
+    padding: 10px;
+}
+
+/*-----------------------COUP DE COEUR / CLIP -----------------*/
+
+.introclip {
+    text-align: center;
+    font-size: 16px;
+    padding: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.clip {
+    padding: 0px;
+    margin: auto;
+}
+
+/*----------------LE FOOTER--------------*/
+
+.lefooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.apropos, .liens, .partenaires, .support, .contact {
+    line-height: 2px;
+    padding: 10px;
+}
+
+/*----------------LE RESPONSIVE---------------*/
+
+@media screen and (max-width:768px) {
+    body {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .titre {
+        font-size: 17px;
+        text-align: center;
+    }
+    .nav-links {
+        font-size: 14px;
+    }
+    nav {
+        background: none;
+        margin: auto;
+        width: 350px;
+    }
+    .titres p {
+        font-size: 17px;
+    }
+    .deuxiemepartie {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .biographiedumoment {
+        width: 350px;
+        height: 650px;
+        color: black;
+        border: 1px solid black;
+        margin: auto;
+    }
+    .biographiedumoment img {
+        width: 350px;
+        height: 200px;
+    }
+    .concerts {
+        width: 350px;
+        height: 600px;
+        color: black;
+        padding: 8px;
+        border: 1px solid black;
+        margin: auto;
+    }
+    .datesconcerts {
+        padding: 10px;
+    }
+    .introclip {
+        text-align: center;
+        font-size: 14px;
+        padding: 14px;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+    .titres p {
+        line-height: 15px;
+    }
+    .clip {
+        margin: auto;
+        width: 350px;
+    }
+    .lefooter {
+        font-size: 10px;
+        margin: auto;
+        width: 450px;
+    }
+    .apropos, .liens, .partenaires, .support, .contact {
+        line-height: 2px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+.titre {
+    color: black;
+    font-size: 40px;
+    margin: 2px;
+    padding: 2px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/*----------------------------NAV BAR-------------------------------*/
+
+nav {
+    height: 12vh;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.nav-links {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 1.5px;
+    word-spacing: 8px;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+li:hover {
+    border-bottom: 1 px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+/*-------------PRESENTATION ARTISTES------------*/
+
+img {
+    margin: 13px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+
+.classementartistes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------ONGLET RECHERCHES RECENTES-------------*/
+
+.recherchesrecentes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chansonsrecentes {
+    width: 160px;
+    height: 250px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.titrerecherchesrecentes {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+
+/*-----------MOTEUR DE RECHERCHE-------------*/
+
+.moteurderecherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+    margin-left: 90px;
+}
+
+.moteurderecherche1, .moteurderecherche2 {
+    padding: 20px;
+}
+
+#search1, #search2 {
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+    padding:0;
+    background-color: #C4C4C4;
+}
+
+/*----------APPLICATIONS DE MUSIQUES----------*/
+
+.musicapplications {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 90px;
+    padding: 20px;
+}
+
+.musicbrainz, .spotify, .tunein, .deezer {
+    margin: 0px;
+    padding: 20px;
+}
+
+.musicapplications img {
+    width: 80px;
+    height: 70px;
+    border: none;
+}
+
+.applis {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+/*----------------LE FOOTER--------------*/
+
+.lefooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+    ;
+    letter-spacing: 2px;
+}
+
+.apropos, .liens, .partenaires, .support, .contact {
+    line-height: 2px;
+    padding: 10px;
+}
+
+/*--------------------LE RESPONSIVE------------------------*/
+
+@media screen and (max-width:768px) {
+    body {
+        margin: 0 auto;
+        padding: 0px;
+    }
+    .titre {
+        font-size: 17px;
+        text-align: center;
+    }
+    .nav-links {
+        font-size: 14px;
+    }
+    nav {
+        background: none;
+        margin: auto;
+        width: 350px;
+    }
+    .lesartistes {
+        margin-left: 120px;
+        width: 400px;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 20px;
+    }
+    .classementartistes {
+        display: flex;
+        flex-direction: column;
+    }
+    .recherchesrecentes {
+        display: none
+    }
+    .moteurderecherche {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    #search1, #search2 {
+        width: 300px;
+        height: 20px;
+        text-align: center;
+        font-style: italic;
+        font-size: 15px;
+        background-color: #C4C4C4;
+    }
+    .moteurderecherche1, .moteurderecherche2 {
+        padding: 10px;
+        margin: auto;
+    }
+    .musicapplications {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+        margin: 0;
+    }
+    .musicapplications img {
+        width: 50px;
+        height: 50px;
+        border: none;
+    }
+    .musicbrainz, .spotify, .tunein, .deezer {
+        padding: 1px;
+        margin: auto;
+        width: 350px;
+    }
+    .applis {
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+        font-size: 14px;
+        color: black;
+        padding: 10px;
+    }
+    .lefooter {
+        font-size: 10px;
+    }
+    .apropos, .liens, .partenaires, .support, .contact {
+        line-height: 2px;
+        padding: 5px;
+    }
+}

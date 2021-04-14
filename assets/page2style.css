@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+.titre {
+    color:black;
+    font-size: 40px;
+    margin: 2px;
+    padding: 2px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/*----------------------------NAV BAR-------------------------------*/
+
+nav {
+    height: 12vh;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.nav-links {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 1.5px;
+    word-spacing: 8px;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+li:hover {
+    border-bottom: 1 px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:grey;
+  }
+
+/*-----------MES ARTISTES------------*/
+
+img {
+    width: 160px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.descriptionpnl, .descriptionhatik, .descriptionhalsey, .descriptionninho, .lestitres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2px;
+    padding:10px; 
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}  
+
+.titres p {
+    letter-spacing: 3px;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.photosclips {
+    width: 320px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+.titrechanson {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin:0px;
+    padding:1px;
+    letter-spacing: 1px;
+}
+
+.titrechanson a {
+    color:black;
+    text-decoration: none;
+}
+
+.titrechanson a:hover {
+    color:grey;
+  }
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*----------------LE FOOTER--------------*/
+
+.lefooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.apropos, .liens, .partenaires, .support, .contact {
+    line-height: 2px;
+    padding: 10px;
+}
+
+/*--------------------LE RESPONSIVE------------------------*/
+
+@media screen and (max-width:768px) {
+
+body {
+    margin:0 auto;
+    padding:0px;
+}
+
+.titre {
+    font-size:17px;
+    text-align: center;
+}
+
+.nav-links {
+    font-size: 14px;
+}
+
+nav {
+    background: none;
+    border:none;
+    border-bottom: 1px solid black;
+    margin:auto;
+    width:350px;
+}
+
+.titres p {
+    font-size: 12px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    padding:1px;
+}
+
+.photosclips {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.descriptionpnl, .descriptionhatik, .descriptionhalsey, .descriptionninho, .lestitres, .descriptionbiographie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.lefooter {
+    font-size: 10px;
+}
+.apropos, .liens, .partenaires, .support, .contact {
+    line-height: 2px;
+    padding: 5px;
+}
+
+}
