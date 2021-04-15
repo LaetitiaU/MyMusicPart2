@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.titre {
+    color: black;
+    font-size: 40px;
+    margin: 2px;
+    padding: 2px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/*----------------------------NAV BAR-------------------------------*/
+
+nav {
+    height: 12vh;
+    width: 100%;
+    margin: auto;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    margin-bottom:40px;
+}
+
+.nav-links {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 1.5px;
+    word-spacing: 8px;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+li:hover {
+    border-bottom: 1 px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+/*----------------PAGE DE CONNEXION---------*/
+
+:root {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+    background-color:white;
+  }
+  
+  body.formPage {
+    display: grid;
+    place-items: center;
+  }
+  
+  .formPage h1 {
+    border: 2px solid black;
+    border-bottom: none;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem 4rem;
+    background: black;
+    color: white;
+  }
+  
+  label, input, button {
+    display: block;
+  }
+  
+  label[for="toggle-password-visibility"] {
+    margin-left: 0.25rem;
+  }
+  
+  .checkbox-group {
+    font-size: 0.75rem;
+    display: flex;
+  }
+  
+  form {
+    padding: 4rem;
+    padding-top: 3rem;
+    border: 2px solid;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  form>*+* {
+    margin-top: 1.25rem;
+  }
+  
+  .input-group>*+* {
+    margin-top: 0.5rem;
+  }
+
+  button {
+    cursor: pointer;
+  }
+  
+  .show-password {
+    border: none;
+    background: none;
+    font-size: 0.75rem;
+  }
+  
+  .show-password:hover {
+    text-decoration: underline;
+  }
+  
+  button[type="submit"] {
+    margin-top: 2rem;
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+  }
+
+  .couleurbouton {
+      margin:0 auto;
+      margin-top:20px;
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: black;
+      color:white;
+      font-size: 15px;
+      width:150px;
+      height:40px;
+  }
+
+
+/*--------------------LE RESPONSIVE------------------------*/
+
+@media screen and (max-width:768px) {
+    body {
+        margin: 0 auto;
+        padding: 0px;
+    }
+    .titre {
+        font-size: 17px;
+        text-align: center;
+    }
+    .nav-links {
+        font-size: 14px;
+    }
+    nav {
+        background: none;
+        margin: auto;
+        width: 350px;
+    }

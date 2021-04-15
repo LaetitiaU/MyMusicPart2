@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        | MY MUSIC © |
+    </title>
+    <meta charset="UTF-08">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/pageconnexionstyle.css">
+</head>
+
+<body>
+    <!----------------------NAVIGATION BAR------------------------>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <p class="titre">MY MUSIC ©</p>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="mesartistes.html">MES ARTISTES</a></li>
+                <li><a href="page3.html">L'ARTISTE DU JOUR</a></li>
+                <li><a href="pageconnexion">ME CONNECTER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!----------------------PAGE DE CONNEXION---------------------------->
+
+    <body class="formPage">
+        <main>
+          <h1>SE CONNECTER</h1>
+          <form>
+            <div class="input-group">
+              <label for="username-">Nom d'utilisateur</label>
+              <input id="username-" name="username-" />
+            </div>
+            <div class="input-group">
+              <label for="password">Mot de passe</label>
+              <input id="password" name="password" type="password" required />
+            </div>
+            <div class="input-group">
+              <label for="confirm-password">Confirmation du mot de passe</label>
+              <input id="confirm-password" name="confirm-password" type="password" required/>
+              <input
+              id="toggle-password-visibility"
+              name="toggle-password-visibility"
+              type="checkbox"
+            />
+            <label for="toggle-password-visibility">
+              Voir le mot de passe
+            </label>
+            </div>
+            <button type="submit">SE CONNECTER</button>
+          </form>
+    
+          <button class="couleurbouton" onclick="change()">Changer la couleur</button>
+        </main>
+    <script src="formulaire.js"></script>
+ 
+
+</body>
+
+</html>
